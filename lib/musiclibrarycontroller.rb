@@ -23,9 +23,15 @@ class MusicLibraryController
         puts "What would you like to do?"
         counter += 1 
         answer = gets.chomp
-        if answer == "exit" || counter == 4 
+        case answer
+        when answer == "exit" || counter == 4 
           break
+        when 'list songs'
+          list_songs
+        else
+          nil
         end
+<<<<<<< HEAD
         case answer
         when 'list songs'
           list_songs
@@ -40,6 +46,9 @@ class MusicLibraryController
         when 'play song'
           play_song
         end
+=======
+        
+>>>>>>> d0e2ed94ac7a6d7b12ecc3682b9d9c1cf56ec563
       end
   end
   
